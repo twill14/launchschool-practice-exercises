@@ -1,0 +1,10 @@
+5. X will print to the screen in the first case, but not in the second case.
+
+The reason for this is because, X was declared outside of the do/end block. Since it was done so, the times method changed the original value of X which was already accessible outside of the blocks code.
+
+Because of this, X will be equal to three.
+
+However in the second example, an error will occur, the reason is because X was created as a temporary variable, only initialized within the times method therefore, can only be used and referenced within the context of that method.
+
+
+6. This error means that someone tried to make a reference or call to a variable that was not properly defined. Most likely they defined it within a method, or a block explicitly and never defined it locally.
